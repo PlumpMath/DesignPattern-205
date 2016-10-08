@@ -19,4 +19,21 @@ package CreationalPatterns.FactoryPattern;
 
 */
 public class main {
+
+    public static void main(String[] args){
+        //获取工厂
+        ShapeFactory shapeFactory = new ShapeFactory();
+
+        //获取Circle对象
+        Shape circle = shapeFactory.getShape("CIRCLE");
+        circle.draw();
+
+        //获取Square对象
+        Shape square = shapeFactory.getShape("SQUARE");
+        square.draw();
+
+        //获取Rectangle对象
+        Shape rectangle = shapeFactory.getShape("RECTANGLE");
+        rectangle.draw();
+    }
 }
